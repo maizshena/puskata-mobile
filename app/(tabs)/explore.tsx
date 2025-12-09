@@ -84,13 +84,11 @@ export default function ExploreScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* SCROLLVIEW SEKARANG WRAP SEMUANYA TERMASUK HEADER */}
       <ScrollView 
         style={styles.scrollView} 
-        contentContainerStyle={{ paddingBottom: 90 }} // TAMBAHKAN paddingBottom
+        contentContainerStyle={{ paddingBottom: 90 }}
         showsVerticalScrollIndicator={false}
       >
-        {/* Header - SEKARANG DI DALAM SCROLLVIEW */}
         <View style={styles.header}>
           <Text style={styles.title}>Explore Books</Text>
 
