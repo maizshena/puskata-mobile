@@ -1,7 +1,6 @@
-// app/(tabs)/_layout.tsx
-import { Tabs } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
 import { Colors } from '@/constants/Colors';
+import { Ionicons } from '@expo/vector-icons';
+import { Tabs } from 'expo-router';
 import { Platform } from 'react-native';
 
 export default function TabsLayout() {
@@ -15,8 +14,8 @@ export default function TabsLayout() {
           backgroundColor: Colors.white,
           borderTopWidth: 1,
           borderTopColor: Colors.gray100,
-          height: Platform.OS === 'ios' ? 85 : 65, // UBAH INI
-          paddingBottom: Platform.OS === 'ios' ? 25 : 10, // UBAH INI
+          height: Platform.OS === 'ios' ? 85 : 65,
+          paddingBottom: Platform.OS === 'ios' ? 25 : 10,
           paddingTop: 8,
         },
         tabBarLabelStyle: {
